@@ -7,14 +7,35 @@ namespace Infinite_Potential
     public partial class MainWindow : Form
     {
         public PlayerData player;
+        static System.Windows.Forms.Timer gameTick;
         public MainWindow()
         {
             InitializeComponent();
             player = new PlayerData();
             UpdateValues("Init");
+            InitTimer(40);
         }
 
-        private void UpdateValues(String which)
+        private static void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
+        {
+            Tick();
+        }
+
+        private static void InitTimer(int duration)
+        {
+            gameTick = new System.Windows.Forms.Timer
+            {
+                Interval = duration
+            };
+            gameTick.Start();
+        }
+
+        private static void Tick()
+        {
+
+        }
+
+            private void UpdateValues(String which)
         {
             switch (which) {
                 case "Food":
@@ -26,6 +47,9 @@ namespace Infinite_Potential
                 case "Init":
                     UpdateValues("Food");
                     UpdateValues("Energy");
+                    break;
+                case "Money":
+                    MoneyLabel.Text = "Money: $" + player.GetInt("Money");
                     break;
                 default:
                     Debug.Write("Unrecognized update type");
@@ -55,6 +79,23 @@ namespace Infinite_Potential
                 _ => "",
             };
 
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OrderFoodButton_Click(object sender, EventArgs e)
+        {
+            int result = player.BuyFood();
+            UpdateValues("Money");
+            UpdateValues("Food");
+            ErrorDisplay.Text = result switch
+            {
+                -1 => "Not enough money",
+                _ => "",
+            };
         }
     }
 }

@@ -4,7 +4,7 @@ namespace Infinite_Potential
 {
     public class PlayerData
     {
-        private static int food, energy, energyLim;
+        private static int food, energy, energyLim, money;
         public PlayerData()
         {
             InitData();
@@ -15,6 +15,7 @@ namespace Infinite_Potential
             food = 5;
             energy = 0;
             energyLim = 1;
+            money = 100;
         }
 
         public int Eat()
@@ -43,6 +44,17 @@ namespace Infinite_Potential
             return -1;
         }
 
+        public int BuyFood()
+        {
+            if(money >= 10)
+            {
+                money -= 10;
+                food += 25;
+                return 1;
+            }
+            return -1;
+        }
+
         public int GetInt(String val)
         {
             return val switch
@@ -50,6 +62,7 @@ namespace Infinite_Potential
                 "Food" => food,
                 "Energy" => energy,
                 "EnergyLim" => energyLim,
+                "Money" => money,
                 _ => -1,
             };
         }

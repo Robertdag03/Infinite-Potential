@@ -81,7 +81,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;EatButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="FoodLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -108,7 +108,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FoodLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="MoveButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>155, 100</value>
@@ -132,7 +132,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MoveButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="EnergyLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -159,7 +159,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;EnergyLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="ErrorDisplay.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -168,10 +168,13 @@
     <value>20, 150</value>
   </data>
   <data name="ErrorDisplay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>0, 25</value>
+    <value>113, 25</value>
   </data>
   <data name="ErrorDisplay.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
+  </data>
+  <data name="ErrorDisplay.Text" xml:space="preserve">
+    <value>Error Display</value>
   </data>
   <data name="&gt;&gt;ErrorDisplay.Name" xml:space="preserve">
     <value>ErrorDisplay</value>
@@ -183,6 +186,85 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ErrorDisplay.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="OrderFoodButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>290, 100</value>
+  </data>
+  <data name="OrderFoodButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>125, 30</value>
+  </data>
+  <data name="OrderFoodButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="OrderFoodButton.Text" xml:space="preserve">
+    <value>Order Food</value>
+  </data>
+  <data name="&gt;&gt;OrderFoodButton.Name" xml:space="preserve">
+    <value>OrderFoodButton</value>
+  </data>
+  <data name="&gt;&gt;OrderFoodButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OrderFoodButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OrderFoodButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="MoneyLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="MoneyLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>290, 50</value>
+  </data>
+  <data name="MoneyLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>116, 25</value>
+  </data>
+  <data name="MoneyLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="MoneyLabel.Text" xml:space="preserve">
+    <value>Money: $100</value>
+  </data>
+  <data name="&gt;&gt;MoneyLabel.Name" xml:space="preserve">
+    <value>MoneyLabel</value>
+  </data>
+  <data name="&gt;&gt;MoneyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MoneyLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MoneyLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ExitButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ExitButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>934, 12</value>
+  </data>
+  <data name="ExitButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>112, 34</value>
+  </data>
+  <data name="ExitButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="ExitButton.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;ExitButton.Name" xml:space="preserve">
+    <value>ExitButton</value>
+  </data>
+  <data name="&gt;&gt;ExitButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExitButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ExitButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
