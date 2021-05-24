@@ -11,6 +11,7 @@ namespace Infinite_Potential
         {
             InitializeComponent();
             player = new PlayerData();
+            UpdateValues("Init");
         }
 
         private void UpdateValues(String which)
@@ -22,6 +23,10 @@ namespace Infinite_Potential
                 case "Energy":
                     EnergyLabel.Text = "Energy: " + player.GetInt("Energy") + "/" + player.GetInt("EnergyLim");
                     break;
+                case "Init":
+                    UpdateValues("Food");
+                    UpdateValues("Energy");
+                    break;
                 default:
                     Debug.Write("Unrecognized update type");
                     break;
@@ -30,15 +35,26 @@ namespace Infinite_Potential
         }
         private void EatButton_Click(object sender, EventArgs e)
         {
-            player.Eat();
+            int result = player.Eat();
             UpdateValues("Food");
             UpdateValues("Energy");
+            ErrorDisplay.Text = result switch
+            {
+                -1 => "You're too full to eat anymore",
+                -2 => "There's nothing left to eat",
+                _ => "",
+            };
         }
 
         private void MoveButton_Click(object sender, EventArgs e)
         {
-            player.Move();
+            int result = player.Move();
             UpdateValues("Energy");
+            ErrorDisplay.Text = result switch { 
+                -1 => "You have no energy left",
+                _ => "",
+            };
+
         }
     }
 }

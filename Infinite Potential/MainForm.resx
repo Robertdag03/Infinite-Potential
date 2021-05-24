@@ -81,7 +81,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;EatButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="FoodLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -108,7 +108,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;FoodLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="MoveButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>155, 100</value>
@@ -132,7 +132,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MoveButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="EnergyLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -159,6 +159,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;EnergyLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ErrorDisplay.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="ErrorDisplay.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>20, 150</value>
+  </data>
+  <data name="ErrorDisplay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>0, 25</value>
+  </data>
+  <data name="ErrorDisplay.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ErrorDisplay.Name" xml:space="preserve">
+    <value>ErrorDisplay</value>
+  </data>
+  <data name="&gt;&gt;ErrorDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ErrorDisplay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ErrorDisplay.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">

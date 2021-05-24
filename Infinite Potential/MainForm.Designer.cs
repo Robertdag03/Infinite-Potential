@@ -34,6 +34,7 @@ namespace Infinite_Potential
             this.FoodLabel = new System.Windows.Forms.Label();
             this.MoveButton = new System.Windows.Forms.Button();
             this.EnergyLabel = new System.Windows.Forms.Label();
+            this.ErrorDisplay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // EatButton
@@ -60,10 +61,16 @@ namespace Infinite_Potential
             resources.ApplyResources(this.EnergyLabel, "EnergyLabel");
             this.EnergyLabel.Name = "EnergyLabel";
             // 
+            // ErrorDisplay
+            // 
+            resources.ApplyResources(this.ErrorDisplay, "ErrorDisplay");
+            this.ErrorDisplay.Name = "ErrorDisplay";
+            // 
             // MainWindow
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ErrorDisplay);
             this.Controls.Add(this.EnergyLabel);
             this.Controls.Add(this.MoveButton);
             this.Controls.Add(this.FoodLabel);
@@ -80,6 +87,7 @@ namespace Infinite_Potential
         private System.Windows.Forms.Label FoodLabel;
         private System.Windows.Forms.Button MoveButton;
         private System.Windows.Forms.Label EnergyLabel;
+        private System.Windows.Forms.Label ErrorDisplay;
     }
 }
 

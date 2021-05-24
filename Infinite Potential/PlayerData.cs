@@ -17,26 +17,30 @@ namespace Infinite_Potential
             energyLim = 1;
         }
 
-        public bool Eat()
+        public int Eat()
         {
             if (food > 0)
             {
-                food--;
-                energy++;
-                return true;
+                if(energy != energyLim)
+                {
+                    food--;
+                    energy++;
+                    return 1;
+                }
+                return -1;
             }
-            return false;
+            return -2;
         }
 
-        public bool Move()
+        public int Move()
         {
             if (energy >= 1)
             {
                 energy--;
                 energyLim++;
-                return true;
+                return 1;
             }
-            return false;
+            return -1;
         }
 
         public int GetInt(String val)
