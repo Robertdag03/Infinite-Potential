@@ -72,11 +72,33 @@ namespace Infinite_Potential
                 active = true;
             }
         }
-        /*
-        public bool Run(int[] values)
+        
+        public int[] Run(int[] values)
         {
-            
+            switch (values.Length){
+                case 1:
+                    values[0] += gValue;
+                    return values;
+                case 2:
+                    if(values[0] >= tValue)
+                    {
+                        values[0] -= tValue;
+                        values[1] += gValue;
+                    }
+                    return values;
+                case 3:
+                    if(values[0] >= tValue && values[1] + gValue <= values[2])
+                    {
+                        values[0] -= tValue;
+                        values[1] += gValue;
+                    }
+                    return values;
+                default:
+                    return values;
+            }
+
+
         }
-        */
+        
     }
 }

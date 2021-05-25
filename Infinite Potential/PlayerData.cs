@@ -5,6 +5,7 @@ namespace Infinite_Potential
     public class PlayerData
     {
         private static int food, energy, energyLim, money;
+        private static PlayerAction eat, move, buyFood;
         public PlayerData()
         {
             InitData();
@@ -16,6 +17,9 @@ namespace Infinite_Potential
             energy = 0;
             energyLim = 1;
             money = 100;
+            eat = new PlayerAction(new string[] { "Eat", "Food", "Energy" }, new int[] { 1, 1 });
+            move = new PlayerAction(new string[] { "Move", "Energy", "Energy Limit" }, new int[] { 1, 1 });
+            buyFood = new PlayerAction(new string[] { "Buy Food", "Money", "Food" }, new int[] { 10, 25});
         }
 
         public int Eat()
